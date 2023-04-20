@@ -12,6 +12,7 @@ import 'animated_cross_fade.dart';
 import 'animated_default_textstyle.dart';
 import 'animated_icon.dart';
 import 'animated_list.dart';
+import 'animated_padding.dart';
 
 void main() => runApp(const MyApp());
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: const AnimatedOpacityWidget(),
+      home: const AnimatedPaddingWidget(),
     );
   }
 }
