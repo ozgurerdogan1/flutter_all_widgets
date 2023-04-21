@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_all_widgets/about_dialog.dart';
 import 'package:flutter_all_widgets/animated_modal_barrier.dart';
 import 'package:flutter_all_widgets/animated_opacity.dart';
+import 'package:flutter_all_widgets/animated_rotation.dart';
 
 import 'abot_dialog_list_tile.dart';
 import 'absorb_pointer.dart';
@@ -13,6 +14,8 @@ import 'animated_default_textstyle.dart';
 import 'animated_icon.dart';
 import 'animated_list.dart';
 import 'animated_padding.dart';
+import 'animated_physical_model.dart';
+import 'animated_positioned.dart';
 
 void main() => runApp(const MyApp());
 
@@ -24,7 +27,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: const AnimatedPaddingWidget(),
+      home: const AnimatedRotationWidget(),
     );
   }
 }
