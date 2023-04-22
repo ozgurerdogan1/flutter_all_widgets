@@ -18,6 +18,8 @@ import 'animated_physical_model.dart';
 import 'animated_positioned.dart';
 import 'animated_size.dart';
 import 'animated_switcher.dart';
+import 'aspect_ratio.dart';
+import 'auto_complate_widget.dart';
 
 void main() => runApp(const MyApp());
 
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: const AnimatedSwitcherWidget(),
+      home:  AutoComplateWidget(),
     );
   }
 }
