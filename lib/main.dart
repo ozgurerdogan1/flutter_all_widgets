@@ -16,6 +16,8 @@ import 'animated_list.dart';
 import 'animated_padding.dart';
 import 'animated_physical_model.dart';
 import 'animated_positioned.dart';
+import 'animated_size.dart';
+import 'animated_switcher.dart';
 
 void main() => runApp(const MyApp());
 
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: const AnimatedRotationWidget(),
+      home: const AnimatedSwitcherWidget(),
     );
   }
 }
