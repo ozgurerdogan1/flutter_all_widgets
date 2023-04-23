@@ -3,6 +3,8 @@ import 'package:flutter_all_widgets/about_dialog.dart';
 import 'package:flutter_all_widgets/animated_modal_barrier.dart';
 import 'package:flutter_all_widgets/animated_opacity.dart';
 import 'package:flutter_all_widgets/animated_rotation.dart';
+import 'package:flutter_all_widgets/blocsemantics_widget.dart';
+import 'package:flutter_all_widgets/bottom_sheet_widget.dart';
 
 import 'abot_dialog_list_tile.dart';
 import 'absorb_pointer.dart';
@@ -20,6 +22,10 @@ import 'animated_size.dart';
 import 'animated_switcher.dart';
 import 'aspect_ratio.dart';
 import 'auto_complate_widget.dart';
+import 'back_drop_filter_widget.dart';
+import 'banner_widget.dart';
+import 'baseline_widget.dart';
+import 'checkbox_listtile.dart';
 
 void main() => runApp(const MyApp());
 
@@ -29,9 +35,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //showSemanticsDebugger: true,
       title: 'Material App',
       theme: ThemeData.dark(),
-      home:  AutoComplateWidget(),
+      home: CheckboxListTileWidget(),
     );
   }
 }
