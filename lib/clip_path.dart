@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -7,14 +9,24 @@ class ClipPathWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    print(size);
+
     return Scaffold(
-      body: ClipPath(
-        clipper: CustomClipPath(),
-        child: Container(
-          height: 300,
-          width: double.infinity,
-          color: Colors.purple,
-        ),
+      body: Stack(
+        children: [
+          ClipPath(
+            clipper: CustomClipPath(),
+            child: Container(
+              width: size.width,
+              height: size.height,
+              child: Image.network(
+                "https://picsum.photos/400/900/",
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -25,8 +37,8 @@ class CustomClipPath extends CustomClipper<Path> {
   Path getClip(Size size) {
     return Path()
       ..lineTo(0, size.height)
-      ..quadraticBezierTo(size.width / 4, size.height - 40, size.width / 2, size.height - 20)
-      ..quadraticBezierTo(3 / 4 * size.width, size.height, size.width, size.height - 30)
+      ..quadraticBezierTo(size.width * .25, size.height - 40, size.width * .50, size.height - 20)
+      ..quadraticBezierTo(size.width * .75, size.height, size.width, size.height - 30)
       ..lineTo(size.width, 0);
   }
 
