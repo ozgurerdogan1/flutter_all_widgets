@@ -5,6 +5,7 @@ import 'package:flutter_all_widgets/animated_opacity.dart';
 import 'package:flutter_all_widgets/animated_rotation.dart';
 import 'package:flutter_all_widgets/blocsemantics_widget.dart';
 import 'package:flutter_all_widgets/bottom_sheet_widget.dart';
+import 'package:flutter_all_widgets/clip_oval.dart';
 
 import 'abot_dialog_list_tile.dart';
 import 'absorb_pointer.dart';
@@ -26,6 +27,10 @@ import 'back_drop_filter_widget.dart';
 import 'banner_widget.dart';
 import 'baseline_widget.dart';
 import 'checkbox_listtile.dart';
+import 'chip_widget.dart';
+import 'choise_chip.dart';
+import 'circle_avatar.dart';
+import 'clip_path.dart';
 
 void main() => runApp(const MyApp());
 
@@ -38,7 +43,7 @@ class MyApp extends StatelessWidget {
       //showSemanticsDebugger: true,
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: CheckboxListTileWidget(),
+      home: ClipPathWidget(),
     );
   }
 }
