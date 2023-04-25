@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widgets/about_dialog.dart';
 import 'package:flutter_all_widgets/animated_modal_barrier.dart';
@@ -35,8 +36,17 @@ import 'clip_path.dart';
 import 'clip_rect.dart';
 import 'clip_rrect.dart';
 import 'container.dart';
+import 'cupertino_action_sheet.dart';
+import 'cupertino_activity_indicator.dart';
+import 'cupertino_alert_dialog.dart';
+import 'cupertino_app.dart';
+import 'cupertino_button.dart';
+import 'cupertino_context_menu.dart';
+import 'cupertino_datepicker.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(
+      const CupertinoAppWidget(),
+    );
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -47,7 +57,25 @@ class MyApp extends StatelessWidget {
       //showSemanticsDebugger: true,
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: ContainerWidget(),
+      home: const ContainerWidget(),
     );
+  }
+}
+
+class CupertinoAppWidget extends StatelessWidget {
+  const CupertinoAppWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const CupertinoApp(
+        theme: CupertinoThemeData.raw(
+          Brightness.dark,
+          CupertinoColors.activeOrange,
+          CupertinoColors.systemIndigo,
+          CupertinoTextThemeData(),
+          Colors.black,
+          Colors.black,
+        ),
+        home: CupertinoDatePickerWidget());
   }
 }
