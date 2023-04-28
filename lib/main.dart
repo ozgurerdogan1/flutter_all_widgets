@@ -43,9 +43,18 @@ import 'cupertino_app.dart';
 import 'cupertino_button.dart';
 import 'cupertino_context_menu.dart';
 import 'cupertino_datepicker.dart';
+import 'cupertino_popup_surface.dart';
+import 'cupertino_scrollbar.dart';
+import 'cupertino_search_textfield.dart';
+import 'cupertino_segmented_control.dart';
+import 'cupertino_slider.dart';
+import 'cupertino_sliding_segmented_control.dart';
+import 'cupertino_switch.dart';
+import 'cupertino_tab_scaffold.dart';
+import 'cupertino_textfield.dart';
 
 void main() => runApp(
-      const CupertinoAppWidget(),
+      const MyApp(),
     );
 
 class MyApp extends StatelessWidget {
@@ -57,25 +66,7 @@ class MyApp extends StatelessWidget {
       //showSemanticsDebugger: true,
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: const ContainerWidget(),
+      home: CupertinoTextFieldWidget(),
     );
-  }
-}
-
-class CupertinoAppWidget extends StatelessWidget {
-  const CupertinoAppWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const CupertinoApp(
-        theme: CupertinoThemeData.raw(
-          Brightness.dark,
-          CupertinoColors.activeOrange,
-          CupertinoColors.systemIndigo,
-          CupertinoTextThemeData(),
-          Colors.black,
-          Colors.black,
-        ),
-        home: CupertinoDatePickerWidget());
   }
 }
