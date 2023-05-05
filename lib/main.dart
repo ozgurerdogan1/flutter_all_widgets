@@ -8,6 +8,8 @@ import 'package:flutter_all_widgets/blocsemantics_widget.dart';
 import 'package:flutter_all_widgets/bottom_sheet_widget.dart';
 import 'package:flutter_all_widgets/clip_oval.dart';
 import 'package:flutter_all_widgets/color_filtered.dart';
+import 'package:flutter_all_widgets/custom_paints/rotating_circle_paint.dart';
+import 'package:flutter_all_widgets/show_menu.dart';
 
 import 'abot_dialog_list_tile.dart';
 import 'absorb_pointer.dart';
@@ -23,7 +25,7 @@ import 'animated_physical_model.dart';
 import 'animated_positioned.dart';
 import 'animated_size.dart';
 import 'animated_switcher.dart';
-import 'aspect_ratio.dart';
+import 'aspect_ratio_find_render_object.dart';
 import 'auto_complate_widget.dart';
 import 'back_drop_filter_widget.dart';
 import 'banner_widget.dart';
@@ -53,6 +55,8 @@ import 'cupertino_switch.dart';
 import 'cupertino_tab_scaffold.dart';
 import 'cupertino_textfield.dart';
 
+import 'custom_paints/pac_man_paint.dart';
+
 void main() => runApp(
       const MyApp(),
     );
@@ -66,7 +70,7 @@ class MyApp extends StatelessWidget {
       //showSemanticsDebugger: true,
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: CupertinoTextFieldWidget(),
+      home: const ShowMenuWidget(),
     );
   }
 }
