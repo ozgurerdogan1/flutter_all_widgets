@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
+
+// ignore: must_be_immutable
 class DragTargetWidget extends StatelessWidget {
-  DragTargetWidget({super.key});
+   DragTargetWidget({super.key});
 
   Color coughtColor = Colors.red;
 

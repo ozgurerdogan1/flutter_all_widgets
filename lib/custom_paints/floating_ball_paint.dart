@@ -3,8 +3,6 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class FloatingBallPaint extends StatefulWidget {
   const FloatingBallPaint({super.key});
