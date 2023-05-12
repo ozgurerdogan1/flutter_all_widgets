@@ -20,7 +20,7 @@ class DismissibleWidget extends StatelessWidget {
               direction: DismissDirection.endToStart,
               onDismissed: (direction) {
                 print(index);
-                // listItem.removeAt(index); 
+                // listItem.removeAt(index);
                 // print(direction.name);
               },
               onResize: () {
@@ -57,7 +57,7 @@ class DismissibleWidget extends StatelessWidget {
                 );
                 return result;
 
-                return await Future.delayed(Duration(seconds: 1)).then((value) => false);
+                //return await Future.delayed(Duration(seconds: 1)).then((value) => false);
               },
               child: ListTile(
                 title: Text(

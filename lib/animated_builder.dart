@@ -57,7 +57,8 @@ class _AnimatedBuilderWidgetState extends State<AnimatedBuilderWidget> with Tick
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    super.dispose();
+
     _controller.dispose();
     _controller.removeListener(() {
       _controllerListener();

@@ -1,17 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class DataTableWidget extends StatelessWidget {
   const DataTableWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    TextStyle title = const TextStyle(
-      fontStyle: FontStyle.italic,
-      fontWeight: FontWeight.bold,
-    );
+    // TextStyle title = const TextStyle(
+    //   fontStyle: FontStyle.italic,
+    //   fontWeight: FontWeight.bold,
+    // );
     return Scaffold(
       body: SafeArea(
         child: DataTable(

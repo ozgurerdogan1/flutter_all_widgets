@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'clip_path.dart';
 
 class ClipRectWidget extends StatelessWidget {
   const ClipRectWidget({super.key});
@@ -29,9 +26,9 @@ class CustomClipRect extends CustomClipper<Rect> {
   Rect getClip(Size size) {
     // return Rect.fromPoints(Offset.zero, Offset(size.width, size.height / 2));
     return const Rect.fromLTRB(100, 100, 400, 400);
-    return Rect.fromCircle(center: Offset(size.width / 2, size.height / 2), radius: 50);
-    return Rect.fromCenter(center: Offset(size.width / 2, size.height / 2), width: 200, height: 400);
-    return Rect.fromLTWH(0, 200, 200, 400);
+   // return Rect.fromCircle(center: Offset(size.width / 2, size.height / 2), radius: 50);
+   // return Rect.fromCenter(center: Offset(size.width / 2, size.height / 2), width: 200, height: 400);
+   // return Rect.fromLTWH(0, 200, 200, 400);
   }
 
   @override

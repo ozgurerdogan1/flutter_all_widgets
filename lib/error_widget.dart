@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  var errorWidget = ErrorWidget.builder = (FlutterErrorDetails details) {
+  final errorWidget = ErrorWidget.builder = (FlutterErrorDetails details) {
     print("budası çalıştı");
     bool indebug = false;
     assert(() {
