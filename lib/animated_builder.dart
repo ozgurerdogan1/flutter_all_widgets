@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
 
 class AnimatedBuilderWidget extends StatefulWidget {
   const AnimatedBuilderWidget({super.key});

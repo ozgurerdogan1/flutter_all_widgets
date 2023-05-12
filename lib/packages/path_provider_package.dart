@@ -1,9 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
 import 'package:path_provider/path_provider.dart' as pathProvider;
 
 class PathProviderPackage extends StatelessWidget {

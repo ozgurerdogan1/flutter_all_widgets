@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_all_widgets/clip_path.dart';
+import 'clip_path.dart';
 
 class ClipRectWidget extends StatelessWidget {
   const ClipRectWidget({super.key});
