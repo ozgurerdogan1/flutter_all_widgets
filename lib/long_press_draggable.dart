@@ -10,7 +10,7 @@ class LongPressDraggableWidget extends StatefulWidget {
 
 class _LongPressDraggableWidgetState extends State<LongPressDraggableWidget> {
   Offset _objectOffset = const Offset(100, 150);
-  Offset _fixOffset = const Offset(0, 0);
+  //Offset _fixOffset = const Offset(0, 0);
   int count = 0;
 
   List<Positioned> _newDraggableObjects = [];
