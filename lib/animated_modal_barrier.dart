@@ -37,7 +37,8 @@ class _AnimatedModalBarrierWidgetState extends State<AnimatedModalBarrierWidget>
     setState(() {
       _isPressed = true;
       _animationController.reset();
-      _animationController.forward();
+     _animationController.forward();
+   
 
       Future.delayed(
         Duration(seconds: 3),
