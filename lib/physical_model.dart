@@ -17,7 +17,7 @@ class _PyhsicalModelWidgetState extends State<PyhsicalModelWidget> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              PhysicalModel(
+              const PhysicalModel(
                 color: Colors.amber,
                 elevation: 20,
                 //shadowColor: Colors.redAccent.shade100,
