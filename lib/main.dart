@@ -23,6 +23,7 @@ import 'package:flutter_all_widgets/sized_overflowbox.dart';
 import 'package:flutter_all_widgets/slide_transition.dart';
 import 'package:flutter_all_widgets/slider.dart';
 import 'package:flutter_all_widgets/sliver_appbar.dart';
+import 'package:flutter_all_widgets/stepper.dart';
 
 import 'animated_modal_barrier.dart';
 import 'every_chip_widgets.dart';
@@ -58,7 +59,7 @@ class MyApp extends StatelessWidget {
       showSemanticsDebugger: false,
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: SliverAppBarWidget(),
+      home: StepperWidget(),
     );
   }
 }
