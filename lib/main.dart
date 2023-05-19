@@ -24,9 +24,18 @@ import 'package:flutter_all_widgets/slide_transition.dart';
 import 'package:flutter_all_widgets/slider.dart';
 import 'package:flutter_all_widgets/sliver_appbar.dart';
 import 'package:flutter_all_widgets/stepper.dart';
+import 'package:flutter_all_widgets/stream_builder.dart';
+import 'package:flutter_all_widgets/tabbar.dart';
+import 'package:flutter_all_widgets/text_form_field.dart';
+import 'package:flutter_all_widgets/time_picker.dart';
+import 'package:flutter_all_widgets/toggle_buttons.dart';
+import 'package:flutter_all_widgets/tooltip.dart';
+import 'package:flutter_all_widgets/transform.dart';
 
 import 'animated_modal_barrier.dart';
 import 'every_chip_widgets.dart';
+import 'fractional_translation.dart';
+import 'fractionally_sizedbox.dart';
 import 'interactive_viewer.dart';
 import 'layout_builder.dart';
 import 'limited_box.dart';
@@ -59,7 +68,7 @@ class MyApp extends StatelessWidget {
       showSemanticsDebugger: false,
       title: 'Material App',
       theme: ThemeData.dark(),
-      home: StepperWidget(),
+      home: TransformWidget(),
     );
   }
 }
